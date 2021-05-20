@@ -21,7 +21,7 @@ class CreateComicsTable extends Migration
             $table->tinyInteger('price');
             $table->string('series');
             $table->date('sale_date');
-            $table->tinyText('type');
+            $table->text('type');
             $table->timestamps();
         });
     }
