@@ -37,7 +37,16 @@ class ComicController extends Controller
      */
     public function store(Request $request)
     {
-        //
+      $data = $request->all();
+
+      $new_comic_obj = new Comic;
+      $new_comic_obj->create($data);
+
+      $comic = Comic::orderBy('id', 'desc')
+      ->first();
+
+      return redirect()
+      ->route('comic.show', compact('comic'));
     }
 
     /**
