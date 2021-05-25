@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('main')
-<form class="" action="{{ route('comics.update', ['comic' => $comic->id]) }}" method="put">
+<form class="" action="{{ route('comics.update', ['comic' => $comic->id]) }}" method="post">
   @csrf
   @method('PUT')
   <input type="text" name="title" value="{{ $comic->title }}" placeholder="Inserisci titolo">

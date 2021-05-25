@@ -14,10 +14,10 @@
         <a href="{{ route('comics.show', ['comic' => $comic->id]) }}">
           Info
         </a>
+        <a href="{{ route('comics.edit', ['comic' => $comic->id]) }}">
+          Modifica fumetto
+        </a>
       </div>
-      <a href="{{ route('comics.edit'), ['comic' => $comic->id] }}">
-        Modifica fumetto
-      </a>
     @endforeach
   </div>
   <a href="{{ route('comics.create') }}">Crea nuovo fumetto</a>
