@@ -1,28 +1,4 @@
-* {
-  padding: 0;
-  margin: 0;
-  border: 0;
-  box-sizing: border-box;
-  font-family: "Greta Sans Condensed Bold", "Greta Sans Bold", Arial, sans-serif;
-}
-
-body {
-  position: relative;
-}
-
-a:-webkit-any-link {
-  text-decoration: none !important;
-}
-
-dl,
-ol,
-ul,
-li {
-  margin-top: 0;
-  margin-bottom: 0;
-  list-style: none;
-}
-
+// containers
 .container-center {
   width: 70%;
   margin: 0 auto;
@@ -46,6 +22,23 @@ li {
   height: 120px;
 }
 
+// buttons
+// .button {
+//   background-color: $color-primary;
+//   border: none;
+//   color: white;
+//   padding: 10px 55px;
+//   text-align: center;
+//   text-decoration: none;
+//   display: inline-block;
+//   font-size: 16px;
+//   margin: 4px 2px;
+//   transition-duration: 0.4s;
+//   cursor: pointer;
+// }
+
+
+// text
 .upper {
   text-transform: uppercase;
 }
@@ -58,6 +51,9 @@ li {
   font-style: italic;
 }
 
+
+// Padding
+// Padding top bottom
 .ptb-5 {
   padding-top: 5px;
   padding-bottom: 5px;
@@ -93,11 +89,11 @@ li {
   padding-bottom: 50px;
 }
 
+// Padding left right
 .plr-5 {
   padding-left: 5px;
   padding-right: 5px;
 }
-
 .plr-10 {
   padding-left: 10px;
   padding-right: 10px;
@@ -123,6 +119,7 @@ li {
   padding-right: 30px;
 }
 
+// Padding left
 .pl-5 {
   padding-left: 5px;
 }
@@ -151,6 +148,7 @@ li {
   padding-left: 50px;
 }
 
+// Padding right
 .pr-5 {
   padding-right: 5px;
 }
@@ -175,10 +173,10 @@ li {
   padding-right: 30px;
 }
 
+// Padding bottom
 .pb-5 {
   padding-bottom: 5px;
 }
-
 .pb-10 {
   padding-bottom: 10px;
 }
@@ -203,6 +201,8 @@ li {
   padding-bottom: 50px;
 }
 
+
+// Padding top
 .pt-5 {
   padding-top: 5px;
 }
@@ -235,15 +235,18 @@ li {
   padding-top: 50px;
 }
 
+// Margin left-right
 .mlr-5 {
   margin-left: 5px;
   margin-right: 5px;
 }
 
+// Margin right
 .mr-300 {
   margin-right: 300px;
 }
 
+// Margin left
 .ml-10 {
   margin-left: 10px;
 }
@@ -256,6 +259,7 @@ li {
   margin-left: 70px;
 }
 
+// Margin top
 .mt-15 {
   margin-top: 15px;
 }
@@ -280,6 +284,7 @@ li {
   margin-top: 120px;
 }
 
+// Margin top bottom
 .mtb-30 {
   margin-top: 30px;
   margin-bottom: 30px;
@@ -304,13 +309,3 @@ li {
   margin-top: 120px;
   margin-bottom: 120px;
 }
-
-main .card-container {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-main .card-container .cards {
-  width: calc(100% / 6);
-}
-
