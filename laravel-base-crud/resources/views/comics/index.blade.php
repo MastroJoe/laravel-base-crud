@@ -15,6 +15,9 @@
           Info
         </a>
       </div>
+      <a href="{{ route('comics.edit'), ['comic' => $comic->id] }}">
+        Modifica fumetto
+      </a>
     @endforeach
   </div>
   <a href="{{ route('comics.create') }}">Crea nuovo fumetto</a>
