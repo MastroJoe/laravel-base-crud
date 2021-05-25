@@ -14,12 +14,20 @@
         <a href="{{ route('comics.show', ['comic' => $comic->id]) }}">
           Info
         </a>
+        <br>
         <a href="{{ route('comics.edit', ['comic' => $comic->id]) }}">
-          Modifica fumetto
+          Modifica
         </a>
+        <br>
+        <button type="button" name="button">Cancella</button>
       </div>
     @endforeach
   </div>
   <a href="{{ route('comics.create') }}">Crea nuovo fumetto</a>
+  <div class="modal" style="display: none">
+    Sicuro di volerlo cancellare?
+    <button type="button" name="button">Si</button>
+    <button type="button" name="button">No</button>
+  </div>
 </main>
 @endsection
