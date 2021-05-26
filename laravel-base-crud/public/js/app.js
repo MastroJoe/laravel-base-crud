@@ -19383,14 +19383,14 @@ __webpack_require__(/*! ./bootstrap */ "./resources/js/bootstrap.js");
 var app = new Vue({
   el: '#root',
   data: {
-    show: false
+    id: null
   },
   methods: {
-    deleteComic: function deleteComic() {
-      this.show = true;
+    deleteComic: function deleteComic(id) {
+      this.id = id;
     },
     dismiss: function dismiss() {
-      this.show = false;
+      this.id = null;
     }
   }
 });

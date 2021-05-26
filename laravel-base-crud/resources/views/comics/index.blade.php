@@ -19,15 +19,23 @@
           Modifica
         </a>
         <br>
-        <button type="button" name="button">Cancella</button>
+        <button type="button" name="button" @ckick="deletComic({{ $comic->id }})">
+          Cancella
+        </button>
+
+        <div class="modal" v-if="id == {{ $comic->id }}">
+          <form class="" action="{{ route('comics.destroy', ['comic'=>$comic->id]) }}" method="post">
+            @csrf
+            @method('DELETE')
+            <p>Sicuro di volerlo cancellare?</p>
+            <input type="submit" value"Si">
+            <button type="button" name="button" @click="dismiss">No</button>
+          </form>
+        </div>
+
       </div>
     @endforeach
   </div>
   <a href="{{ route('comics.create') }}">Crea nuovo fumetto</a>
-  <div class="modal" v-if='show'>
-    Sicuro di volerlo cancellare?
-    <button type="button" name="button">Si</button>
-    <button type="button" name="button" @click='dismiss'>No</button>
-  </div>
 </main>
 @endsection

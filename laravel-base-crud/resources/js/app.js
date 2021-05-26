@@ -3,14 +3,16 @@ require('./bootstrap');
 let app = new Vue({
   el: '#root',
   data: {
-    show: false,
+    id: null,
   },
+
   methods: {
-    deleteComic: function(){
-      this.show = true;
+    deleteComic: function(id){
+      this.id = id;
     },
+
     dismiss: function(){
-      this.show = false;
+      this.id = null;
     },
   }
 })

@@ -84,7 +84,7 @@ class ComicController extends Controller
 
       $comic->update($data);
 
-      return redirect()->route('comics.show', compact('comic'));
+      return redirect()->route('comics.index', compact('comic'));
     }
 
     /**
@@ -95,6 +95,7 @@ class ComicController extends Controller
      */
     public function destroy(Comic $comic)
     {
-        //
+      $comic->delete();
+      return redirect()->route('comics.index');
     }
 }
