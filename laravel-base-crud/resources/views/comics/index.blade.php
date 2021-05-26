@@ -2,7 +2,7 @@
 
 @section('main')
 <main>
-  <div class="container-fluid card-container">
+  <div id="root" class="container-fluid card-container">
     <!-- stampo tutte le cards con foreach -->
     @foreach ($comics as $comic)
       <div class="cards">
@@ -24,10 +24,10 @@
     @endforeach
   </div>
   <a href="{{ route('comics.create') }}">Crea nuovo fumetto</a>
-  <div class="modal" style="display: none">
+  <div class="modal" v-if='show'>
     Sicuro di volerlo cancellare?
     <button type="button" name="button">Si</button>
-    <button type="button" name="button">No</button>
+    <button type="button" name="button" @click='dismiss'>No</button>
   </div>
 </main>
 @endsection

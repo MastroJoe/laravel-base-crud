@@ -66,7 +66,7 @@
     <body>
       @yield('main')
 
-      <script src="/js/app.js" charset="utf-8"></script>
       <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12"></script>
+      <script src="/js/app.js" charset="utf-8"></script>
     </body>
 </html>
